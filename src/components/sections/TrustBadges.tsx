@@ -77,9 +77,9 @@ const BADGES = [
 
 export default function TrustBadges() {
   return (
-    <section className="py-20 md:py-24 bg-[#0a0a1a] border-y border-violet-900/20">
+    <section className="py-10 md:py-12 bg-[#0a0a1a] border-y border-violet-900/20">
       <div className="container-custom px-4">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6">
           {BADGES.map((badge, index) => (
             <div key={index} className="text-center group">
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-violet-900 border border-violet-800 text-violet-200 mb-3 group-hover:border-violet-500 transition-colors">

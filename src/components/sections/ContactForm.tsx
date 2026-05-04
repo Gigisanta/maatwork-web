@@ -42,7 +42,7 @@ export default function ContactForm() {
 
   if (submitted) {
     return (
-      <section id="contact" className="py-20 md:py-32 bg-[#0a0a1a]">
+<section id="contact" className="py-12 md:py-16 bg-[#0a0a1a]">
         <div className="container-custom px-4">
           <div className="max-w-xl mx-auto text-center">
             <div className="w-20 h-20 rounded-full bg-green-600/40 flex items-center justify-center mx-auto mb-6">
@@ -67,7 +67,7 @@ export default function ContactForm() {
     <section id="contact" className="py-20 md:py-32 bg-[#0a0a1a]">
       <div className="container-custom px-4">
         <div className="max-w-xl mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               ¿Listo para <span className="gradient-text">automatizar</span> tu local?
             </h2>
@@ -76,7 +76,7 @@ export default function ContactForm() {
             </p>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-5">
+          <form onSubmit={handleSubmit} className="space-y-4">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-slate-300 mb-2">
                 Nombre
@@ -176,7 +176,7 @@ export default function ContactForm() {
           </form>
 
           {/* WhatsApp alternative */}
-          <div className="mt-8 text-center">
+          <div className="mt-6 text-center">
             <p className="text-slate-400 mb-4">¿Prefieres escribir directo?</p>
             <a
               href="https://wa.me/5491130916574?text=Hola!%20Quiero%20más%20información%20sobre%20MaatWork"

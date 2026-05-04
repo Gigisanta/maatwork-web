@@ -35,7 +35,7 @@ export default function HeroSection() {
     <section
       ref={sectionRef}
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16"
     >
       {/* Gradient Overlay for better text readability */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#030014]/60 to-[#030014] z-[1]" />
@@ -44,7 +44,7 @@ export default function HeroSection() {
       <div className="relative z-10 container-custom text-center px-4">
         <div className="max-w-4xl mx-auto">
           {/* Eyebrow */}
-          <div className="reveal opacity-0 mb-6" style={{ animationDelay: '0.1s' }}>
+          <div className="reveal opacity-0 mb-4" style={{ animationDelay: '0.1s' }}>
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-violet-900/90 border border-violet-700/50 text-sm text-violet-300">
               <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
               Ahora en Beta — Precio especial de lanzamiento
@@ -66,7 +66,7 @@ export default function HeroSection() {
           </p>
 
           {/* Trust Badges */}
-          <div className="reveal opacity-0 flex flex-wrap justify-center gap-6 md:gap-12 mb-12" style={{ animationDelay: '0.4s' }}>
+          <div className="reveal opacity-0 flex flex-wrap justify-center gap-4 md:gap-8 mb-8" style={{ animationDelay: '0.4s' }}>
             {TRUST_BADGES.map((badge, i) => (
               <div key={i} className="group flex flex-col items-center hover:scale-105 transition-transform duration-300">
                 <span className="text-2xl md:text-3xl font-bold gradient-text">{badge.value}</span>
@@ -98,7 +98,7 @@ export default function HeroSection() {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10">
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10">
           <div className="w-6 h-10 rounded-full border-2 border-violet-500/80 flex justify-center pt-2">
             <div className="w-1.5 h-3 bg-violet-500 rounded-full animate-bounce" />
           </div>

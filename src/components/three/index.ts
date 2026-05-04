@@ -1,4 +1,1 @@
-export { ParticleField } from './ParticleField';
-export { FloatingGeometry } from './FloatingGeometry';
-export { GlassPanel } from './GlassPanel';
-export { HeroCanvas } from './HeroCanvas';
+export { default as GalaxyBackground3D } from './GalaxyBackground3D';

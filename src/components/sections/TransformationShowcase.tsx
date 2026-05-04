@@ -26,9 +26,9 @@ const METRICS = [
 
 export default function TransformationShowcase() {
   return (
-    <section id="transformation" className="relative py-20 md:py-32 bg-[#0a0a1a]">
+    <section id="transformation" className="relative py-12 md:py-16 bg-[#0a0a1a]">
       <div className="container-custom px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <h2 className="text-3xl md:text-5xl font-bold mb-4">
             De <span className="text-red-400">esto...</span> a{' '}
             <span className="text-green-400">esto</span>
@@ -38,9 +38,9 @@ export default function TransformationShowcase() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 gap-8 mb-10">
           {/* Before */}
-          <div className="bg-gradient-to-br from-red-950/30 to-transparent border border-red-900/30 rounded-3xl p-8">
+          <div className="bg-gradient-to-br from-red-950/30 to-transparent border border-red-900/30 rounded-3xl p-6">
             <div className="flex items-center gap-3 mb-8">
               <span className="text-3xl">😔</span>
               <h3 className="text-2xl font-bold text-red-400">Sin MaatWork</h3>
@@ -56,7 +56,7 @@ export default function TransformationShowcase() {
           </div>
 
           {/* After */}
-          <div className="bg-gradient-to-br from-green-950/30 to-transparent border border-green-900/30 rounded-3xl p-8">
+          <div className="bg-gradient-to-br from-green-950/30 to-transparent border border-green-900/30 rounded-3xl p-6">
             <div className="flex items-center gap-3 mb-8">
               <span className="text-3xl">😊</span>
               <h3 className="text-2xl font-bold text-green-400">Con MaatWork</h3>
@@ -73,9 +73,9 @@ export default function TransformationShowcase() {
         </div>
 
         {/* Metrics */}
-        <div className="grid grid-cols-3 gap-6 max-w-3xl mx-auto">
+        <div className="grid grid-cols-3 gap-4 max-w-3xl mx-auto">
           {METRICS.map((metric, index) => (
-            <div key={index} className="text-center p-6 bg-gradient-to-b from-violet-950/30 to-transparent rounded-2xl border border-violet-900/20">
+            <div key={index} className="text-center p-4 bg-gradient-to-b from-violet-950/30 to-transparent rounded-2xl border border-violet-900/20">
               <div className="text-3xl md:text-4xl font-bold gradient-text mb-1">
                 {metric.value}
                 <span className="text-lg ml-1">{metric.unit}</span>

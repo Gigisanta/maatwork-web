@@ -20,13 +20,13 @@ const SOLUTIONS = [
 
 export default function ProblemSolution() {
   return (
-    <section id="problem-solution" className="relative py-20 md:py-32 bg-[#030014]">
+    <section id="problem-solution" className="relative py-12 md:py-16 bg-[#030014]">
       <div className="container-custom px-4">
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-stretch">
+        <div className="grid md:grid-cols-2 gap-6 items-stretch">
           {/* Problem Card */}
           <div className="relative group">
             <div className="absolute inset-0 bg-gradient-to-br from-red-900/60 to-transparent rounded-3xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity" />
-            <div className="relative bg-gradient-to-br from-red-950/90 to-red-950/50 border border-red-900/80 rounded-3xl p-8 md:p-10 h-full">
+            <div className="relative bg-gradient-to-br from-red-950/90 to-red-950/50 border border-red-900/80 rounded-3xl p-6 md:p-8 h-full">
               <div className="flex items-center gap-3 mb-8">
                 <span className="text-3xl">😰</span>
                 <h2 className="text-2xl md:text-3xl font-bold text-red-400">¿Te suena familiar?</h2>
@@ -45,7 +45,7 @@ export default function ProblemSolution() {
           {/* Solution Card */}
           <div className="relative group">
             <div className="absolute inset-0 bg-gradient-to-br from-green-900/60 to-transparent rounded-3xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity" />
-            <div className="relative bg-gradient-to-br from-green-950/90 to-green-950/50 border border-green-900/80 rounded-3xl p-8 md:p-10 h-full">
+            <div className="relative bg-gradient-to-br from-green-950/90 to-green-950/50 border border-green-900/80 rounded-3xl p-6 md:p-8 h-full">
               <div className="flex items-center gap-3 mb-8">
                 <span className="text-3xl">🚀</span>
                 <h2 className="text-2xl md:text-3xl font-bold text-green-400">Así funciona MaatWork</h2>
@@ -63,7 +63,7 @@ export default function ProblemSolution() {
         </div>
 
         {/* Arrow */}
-        <div className="hidden md:flex justify-center mt-12">
+        <div className="hidden md:flex justify-center mt-8">
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-r from-violet-600 to-purple-600 rounded-full blur-lg opacity-50" />
             <div className="relative w-16 h-16 bg-gradient-to-r from-violet-600 to-purple-600 rounded-full flex items-center justify-center">

@@ -13,7 +13,7 @@ const LOGOS = [
 
 export default function LogoCarousel() {
   return (
-    <section className="py-20 bg-[#030014] border-y border-violet-900/20 overflow-hidden">
+    <section className="py-10 bg-[#030014] border-y border-violet-900/20 overflow-hidden">
       <div className="container-custom px-4 mb-8">
         <p className="text-center text-base text-slate-400 uppercase tracking-wider">
           Tecnologías que utilizamos

@@ -31,10 +31,10 @@ export default function ROICalculator() {
   };
 
   return (
-    <section id="roi-calculator" className="py-20 md:py-32 bg-gradient-to-b from-[#0a0a1a] to-[#030014]">
+    <section id="roi-calculator" className="py-12 md:py-16 bg-gradient-to-b from-[#0a0a1a] to-[#030014]">
       <div className="container-custom px-4">
         <div className="max-w-2xl mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center mb-6">
             <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-violet-600 mb-6">
               <svg className="w-8 h-8 text-violet-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
@@ -50,7 +50,7 @@ export default function ROICalculator() {
 
           <div className="bg-[#0a0a1a] border border-violet-800 rounded-3xl p-8">
             {/* Sliders */}
-            <div className="space-y-6 mb-10">
+            <div className="space-y-6 mb-6">
               {/* Hours per day */}
               <div>
                 <div className="flex justify-between items-center mb-3">
@@ -114,7 +114,7 @@ export default function ROICalculator() {
             </div>
 
             {/* Results */}
-            <div className="bg-[#030014] rounded-2xl p-6 mb-8">
+            <div className="bg-[#030014] rounded-2xl p-4 mb-4">
               <div className="text-center mb-6">
                 <p className="text-slate-400 mb-2">Ahorro mensual</p>
                 <p className="text-5xl md:text-6xl font-bold gradient-text">

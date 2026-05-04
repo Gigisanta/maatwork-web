@@ -38,9 +38,9 @@ const STEPS = [
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="relative py-20 md:py-32 bg-gradient-to-b from-[#030014] to-[#0a0a1a]">
+    <section id="how-it-works" className="relative py-12 md:py-16 bg-gradient-to-b from-[#030014] to-[#0a0a1a]">
       <div className="container-custom px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-6">
           <h2 className="text-3xl md:text-5xl font-bold mb-4">
             En <span className="gradient-text">3 pasos</span> tienes tu app funcionando
           </h2>
@@ -49,7 +49,7 @@ export default function HowItWorks() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-6">
           {STEPS.map((step, index) => (
             <div key={index} className="relative group">
               {/* Connector Line */}
@@ -61,7 +61,7 @@ export default function HowItWorks() {
                 {/* Icon Circle */}
                 <div className="relative inline-flex mb-6">
                   <div className="absolute inset-0 bg-gradient-to-br from-violet-600 to-purple-600 rounded-full blur-lg opacity-30 group-hover:opacity-50 transition-opacity" />
-                  <div className="relative w-24 h-24 rounded-full bg-gradient-to-br from-violet-950 to-purple-950 border border-violet-600 flex items-center justify-center text-violet-400">
+                  <div className="relative w-20 h-20 rounded-full bg-gradient-to-br from-violet-950 to-purple-950 border border-violet-600 flex items-center justify-center text-violet-400">
                     {step.icon}
                   </div>
                   <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-violet-600 flex items-center justify-center">
@@ -80,7 +80,7 @@ export default function HowItWorks() {
         </div>
 
         {/* Bottom CTA */}
-        <div className="text-center mt-16">
+        <div className="text-center mt-8">
           <a
             href="https://wa.me/5491130916574?text=Hola!%20Quiero%20saber%20más%20sobre%20cómo%20funciona%20MaatWork"
             target="_blank"

@@ -47,9 +47,9 @@ const TESTIMONIALS = [
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="relative py-20 md:py-32 bg-gradient-to-b from-[#0a0a1a] to-[#030014]">
+    <section id="testimonials" className="relative py-12 md:py-16 bg-gradient-to-b from-[#0a0a1a] to-[#030014]">
       <div className="container-custom px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-6">
           <h2 className="text-3xl md:text-5xl font-bold mb-4">
             Lo que dicen nuestros <span className="gradient-text">clientes</span>
           </h2>
@@ -58,11 +58,11 @@ export default function Testimonials() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {TESTIMONIALS.map((testimonial, index) => (
             <div
               key={index}
-              className="p-6 bg-gradient-to-br from-violet-950 to-purple-950 border border-violet-800/80 rounded-2xl hover:border-violet-500 transition-all duration-300"
+              className="p-4 bg-gradient-to-br from-violet-950 to-purple-950 border border-violet-800/80 rounded-2xl hover:border-violet-500 transition-all duration-300"
             >
               {/* Quote */}
               <div className="mb-6">
@@ -96,7 +96,7 @@ export default function Testimonials() {
         </div>
 
         {/* Video Testimonials Placeholder */}
-        <div className="mt-16 grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="mt-8 grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           <div className="relative aspect-video bg-gradient-to-br from-violet-950 to-purple-950 rounded-2xl border border-violet-800/60 overflow-hidden flex items-center justify-center group cursor-pointer">
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10" />
             <div className="absolute inset-0 flex items-center justify-center z-20">

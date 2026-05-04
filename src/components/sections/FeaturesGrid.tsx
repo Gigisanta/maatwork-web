@@ -72,9 +72,9 @@ const FEATURES = [
 
 export default function FeaturesGrid() {
   return (
-    <section id="features" className="relative py-20 md:py-32 bg-[#030014]">
+    <section id="features" className="relative py-12 md:py-16 bg-[#030014]">
       <div className="container-custom px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <h2 className="text-3xl md:text-5xl font-bold mb-4">
             Todo lo que necesitas en <span className="gradient-text">un solo lugar</span>
           </h2>
@@ -83,11 +83,11 @@ export default function FeaturesGrid() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {FEATURES.map((feature, index) => (
             <div
               key={index}
-              className="reveal group relative p-6 bg-gradient-to-br from-violet-950 to-purple-950 border border-violet-800/80 rounded-2xl hover:border-violet-500 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_40px_rgba(124,58,237,0.3)]"
+              className="reveal group relative p-5 bg-gradient-to-br from-violet-950 to-purple-950 border border-violet-800/80 rounded-2xl hover:border-violet-500 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_40px_rgba(124,58,237,0.3)]"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-violet-600/20 to-purple-600/20 opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-300" />
               <div className="absolute -inset-1 bg-gradient-to-br from-violet-600/30 to-purple-600/30 rounded-2xl opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-300 -z-10" />

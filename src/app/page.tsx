@@ -18,7 +18,7 @@ import ContactForm from '@/components/sections/ContactForm';
 import Footer from '@/components/sections/Footer';
 import FloatingWhatsApp from '@/components/sections/FloatingWhatsApp';
 
-const Background3D = dynamic(() => import('@/components/three/Background3D'), { ssr: false });
+const GalaxyBackground3D = dynamic(() => import('@/components/three/GalaxyBackground3D'), { ssr: false });
 
 export default function Home() {
   return (
@@ -41,7 +41,7 @@ export default function Home() {
       </main>
       <Footer />
       <FloatingWhatsApp />
-      <Background3D />
+      <GalaxyBackground3D />
     </div>
   );
 }

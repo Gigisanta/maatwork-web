@@ -41,9 +41,9 @@ export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section id="faq" className="relative py-20 md:py-32 bg-gradient-to-b from-[#030014] to-[#0a0a1a]">
+    <section id="faq" className="relative py-12 md:py-16 bg-gradient-to-b from-[#030014] to-[#0a0a1a]">
       <div className="container-custom px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-6">
           <h2 className="text-3xl md:text-5xl font-bold mb-4">
             Preguntas <span className="gradient-text">frecuentes</span>
           </h2>
@@ -52,7 +52,7 @@ export default function FAQSection() {
           </p>
         </div>
 
-        <div className="max-w-3xl mx-auto space-y-3">
+        <div className="max-w-3xl mx-auto space-y-2">
           {FAQS.map((faq, index) => (
             <div
               key={index}
@@ -62,35 +62,45 @@ export default function FAQSection() {
                   : 'border-violet-800/60 bg-[#0a0a1a] hover:bg-violet-950'
               }`}
             >
-              <button
-                onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full flex items-center justify-between p-6 text-left transition-all duration-200"
-              >
-                <span className="font-medium text-white pr-4">{faq.question}</span>
-                <svg
-                  className={`w-5 h-5 text-violet-400 flex-shrink-0 transition-transform duration-300 ${
-                    openIndex === index ? 'rotate-180' : ''
-                  }`}
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+              <h3>
+                <button
+                  type="button"
+                  onClick={() => setOpenIndex(openIndex === index ? null : index)}
+                  aria-expanded={openIndex === index}
+                  aria-controls={`faq-answer-${index}`}
+                  id={`faq-question-${index}`}
+                  className="w-full flex items-center justify-between p-3 text-left transition-all duration-200"
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
+                  <span className="font-medium text-white pr-4">{faq.question}</span>
+                  <svg
+                    className={`w-5 h-5 text-violet-400 flex-shrink-0 transition-transform duration-300 ${
+                      openIndex === index ? 'rotate-180' : ''
+                    }`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+              </h3>
               <div
+                id={`faq-answer-${index}`}
+                role="region"
+                aria-labelledby={`faq-question-${index}`}
                 className={`overflow-hidden transition-all duration-300 ${
                   openIndex === index ? 'max-h-96' : 'max-h-0'
                 }`}
               >
-                <p className="px-6 pb-6 text-slate-300 leading-relaxed">{faq.answer}</p>
+                <p className="px-4 pb-4 text-slate-300 leading-relaxed">{faq.answer}</p>
               </div>
             </div>
           ))}
         </div>
 
         {/* CTA */}
-        <div className="text-center mt-12">
+        <div className="text-center mt-6">
           <p className="text-slate-300 mb-4">¿Tienes otra pregunta?</p>
           <a
             href="https://wa.me/5491130916574?text=Hola!%20Tengo%20una%20pregunta%20sobre%20MaatWork"
